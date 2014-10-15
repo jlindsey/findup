@@ -55,4 +55,4 @@ config.h*
 config.status
 .deps/
 Makefile
-
+*.tar.gz
