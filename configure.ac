@@ -3,11 +3,13 @@
 
 AC_PREREQ([2.69])
 AC_INIT([findup], [0.1.0], [joshua.s.lindsey@gmail.com])
-AC_CONFIG_SRCDIR([findup.c])
+AC_CONFIG_SRCDIR([src/findup.c])
 AC_CONFIG_HEADERS([config.h])
 
 AM_INIT_AUTOMAKE
-AC_CONFIG_FILES([Makefile])
+AC_CONFIG_FILES([Makefile
+                 man/Makefile
+                 src/Makefile])
 
 # Checks for programs.
 AC_PROG_CC
