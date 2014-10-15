@@ -1,0 +1,28 @@
+findup(1) -- search up a directory tree
+=======================================
+
+## SYNOPSIS
+
+`findup` [`-qa`] <start_dir> <filename>
+
+## DESCRIPTION
+
+**FindUp** starts at a specified directory, searching it and all directories
+up the tree for a specified filename until it hits `/`. Once it finds it,
+it outputs the path to `stdout`.
+
+## OPTIONS
+
+  * `-q`:
+    Don't output the path of the found file. Simply exit with the proper
+    code depending on whether the file was found or not.
+
+  * `-a`:
+    Don't stop the search on the first hit. Keep iterating up the directory
+    tree and output each found file path to `stdout`.
+
+## EXIT CODES
+
+When a file is found, exits with **0**. If no file is found, exits with **1**.
+
+Any errors exit with **2**.
