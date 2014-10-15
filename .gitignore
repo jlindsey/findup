@@ -51,7 +51,7 @@ Makefile.in
 
 ### Custom ###
 *.log
-config.h
+config.h*
 config.status
 .deps/
 Makefile
